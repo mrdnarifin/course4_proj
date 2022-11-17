@@ -37,7 +37,7 @@ def fill_movie_details(movie):
         movie.genres.add(genre)
     movie.is_full_record = True
     movie.save()
-
+    
 def search_and_save(search):
     """
     Perform a search for search_term against the API, but only if it hasn't been searched in the past 24 hours. Save
